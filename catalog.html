@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Technomart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-top">
+      <div class="container">
+        <a href="index.html" class="header-logo">Техномарт</a>
+        <form action="#" class="header-search">
+          <input type="search" name="search" id="search" placeholder="Поиск">
+          <label for="search"></label>
+        </form>
+        <a href="#" class="header-bookmark">Закладки:0</a>
+        <a href="#" class="header-card-catalog">Корзина:10</a>
+        <a href="#" class="header-order">Оформить заказ</a>
+      </div>
+      </div>
+    <div class="container">
+    <div class="header-midlle clearfix">
+      <p class="header-midlle-about">Интернет магазин строительных материалов и инструмента для ремонта</p>
+          <div class="header-midlle-contacts">
+            <p class="header-contacts-telephone">+7 (812) 555-05-55</p>
+            <p class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="header-midlle-user">
+            <a href="#" class="header-user-login-catalog">Равшан Джамшутович</a>
+            <p class="header-user-info">
+            <ul>
+              <li><a href="#">Мои заказы</a></li>
+              <li><a href="#">Личный кабинет</a> </li>
+            </ul>
+          </p>
+
+          </div>
+      </div>
+    <div class="header-bottom">
+      <nav>
+        <ul class="main-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <!--основная часть каталога-->
+  <main class="container clearfix">
+    <div class="breadcrumbs">
+      <a href="index.html" class="home">Главная</a>
+      <a href="#">Каталог</a>
+      <a href="#">Инструмент</a>
+      <a href="#">Перфоратор</a>
+    </div>
+    <h2 class="catalog-main-header">Перфораторы</h2>
+    <div class="filters">
+      <div class="filter-title">
+        Фильтр:
+      </div>
+      <form action="#" method="post">
+        <div class="filter-price">
+          <h3>Цена:</h3>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="width:80%">
+              </div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            <input type="text" name="price-min" value="0" class="price-min">
+            <input type="text" name="price-max" value="30000" class="price-max">
+          </div>
+        </div>
+        <div class="filter-brand">
+          <h3>Производители:</h3>
+          <ul>
+            <li style="border: 2px solid red">
+              <input type="checkbox" name="filter-brand" value="Bosh" id="brand-1" checked>
+              <label for="brand-1">Bosh</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand" value="Интерскол" id="brand-2">
+              <label for="brand-2">Интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand" value="Makita" id="brand-3" checked>
+              <label for="brand-3">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand" value="Dewalt" id="brand-4">
+              <label for="brand-4">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand" value="Hitachi" id="brand-5">
+              <label for="brand-5">Hitachi</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-power">
+          <h3>Питание:</h3>
+          <ul>
+            <li>
+              <input type="radio" name="filter-power" value="1" id="power-1" checked>
+              <label for="power-1">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="filter-power" value="2" id="power-2">
+              <label for="power-2">Сетевые</label>
+            </li>
+          </ul>
+        </div>
+       <input type="submit" name="submit" value="Показать" class="apply-filter-btn">
+      </form>
+    </div>
+    <div class="main-gallery">
+      <div class="gallery-sortirng">
+        <span class="gallery-sortirng-name">Сортировка:</span>
+        <a href="#" class="sort-price sort-price-active">По цене</a>
+        <a href="#" class="sort-type">По типу</a>
+        <a href="#" class="sort-function">По функционалу</a>
+        <a href="#" class="sort-ascending sort-ascending-active"></a>
+        <a href="#" class="sort-descending"></a>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="catolog-item">
+        <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
+        <p class="catalog-item-vendor">Перфоратор Bosh</p>
+        <p class="catalog-item-modul">BFG 9000</p>
+        <p class="catalog-item-price">32500</p>
+        <p class="catalog-item-discount">25500</p>
+      </div>
+      <div class="pagination">
+        <a href="#" class="pagination-page-number active">1</a>
+        <a href="#" class="pagination-page-number">2</a>
+        <a href="#" class="pagination-page-number">3</a>
+        <a href="#" class="pagination-next-page">Следующая</a>
+      </div>
+    </div>
+
+  </main>
+
+
+    <footer>
+      <div class="footer-top clearfix">
+        <div class="container">
+          <a href="#" class="footer-logo">Техномарт</a>
+          <ul class="footer-contacts">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-midlle clearfix">
+        <div class="container">
+          <div class="footer-adress">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>+7 (812) 555-05-55</p>
+            </div>
+            <ul class="footer-offer clearfix">
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+
+        </div>
+      </div>
+      <div class="footer-bottom clearfix">
+        <div class="container">
+          <div class="footer-bottom-copirait">
+            <p>© 2010–2017 Компания «Техномарт» </p>
+            <p>Все права защищены</p>
+            </div>
+            <div class="footer-bottom-social">
+              <a href="#" class="footer-social-btn footer-social-vk"></a>
+              <a href="#" class="footer-social-btn footer-social-fb"></a>
+              <a href="#" class="footer-social-btn footer-social-inst"></a>
+            </div>
+            <div class="footer-bottom-feedback">
+              <p>Обратная связь:</p>
+              <a href="mailto:mail@htmlacademy.ru" class="footer-feedback-email">mail@htmlacademy.ru</a>
+              </div>
+              <div class="footer-bottom-design">
+                <p>Разработано</p>
+                <a href="#" class="footer-autor-design">htmlacademy.ru</a>
+              </div>
+
+        </div>
+      </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

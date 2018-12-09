@@ -1,0 +1,32 @@
+{
+  "name": "project_technomart",
+  "version": "1.0.0",
+  "description": "mypersonalSide",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Dimagerasimenko/myprojectSide.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css"
+  ],
+  "author": "I",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dimagerasimenko/390043-technomart/issues"
+  },
+  "homepage": "https://github.com/Dimagerasimenko/390043-technomart#readme",
+  "devDependencies": {
+    "browser-sync": "2.26.3",
+    "gulp": "4.0.x",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0"
+  }
+}
