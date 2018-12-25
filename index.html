@@ -29,8 +29,8 @@
             <p class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-midlle-user">
-            <a href="#" class="header-user-login">Войти</a>
-            <a href="#" class="header-user-registration">Регистрация</a>
+            <button type="button" class="header-user-login">Войти</button>
+            <button type="button" class="header-user-registration">Регистрация</button>
           </div>
       </div>
     <div class="header-bottom">
@@ -102,39 +102,64 @@
 
   <!-- Блок с товаром - дрель-->
   <div class="container">
+    <div class="catalog-item-info">Блок об успешной покупке</div>
     <div class="popular-block clearfix">
     <p class="popular-title">Популярные товары:</p>
     <a href="#" class="popular-btm">Все популярные товары</a>
     </div>
     <div class="popular-item clearfix">
       <div class="catolog-item">
+        <div class="btn-box">
+          <button class="btn-item-buy"> Купить</button>
+        </div>
         <img src="img/drel1.png" alt="drel1" class="catolog-item-img" width="127" height="117">
         <p class="catalog-item-vendor">Перфоратор Bosh</p>
         <p class="catalog-item-modul">BFG 9000</p>
         <p class="catalog-item-price">32500</p>
         <p class="catalog-item-discount">25500</p>
+
       </div>
       <div class="catolog-item">
+        <div class="btn-box">
+          <button class="btn-item-buy"> Купить</button>
+        </div>
         <img src="img/drel2.png" alt="drel2" class="catolog-item-img" width="127" height="117">
         <p class="catalog-item-vendor">Перфоратор Bosh</p>
         <p class="catalog-item-modul">BFG 3000</p>
         <p class="catalog-item-price">22500</p>
         <p class="catalog-item-discount">15500</p>
+
       </div>
       <div class="catolog-item">
+        <div class="btn-box">
+          <button class="btn-item-buy"> Купить</button>
+        </div>
         <img src="img/drel3.png" alt="drel3" class="catolog-item-img" width="127" height="117">
         <p class="catalog-item-vendor">Перфоратор Bosh</p>
         <p class="catalog-item-modul">BFG 6000</p>
         <p class="catalog-item-price">30500</p>
         <p class="catalog-item-discount">25500</p>
+
       </div>
         <div class="catolog-item new-item">
+          <div class="btn-box">
+            <button class="btn-item-buy"> Купить</button>
+          </div>
         <img src="img/drel4.png" alt="drel4" class="catolog-item-img" width="127" height="117">
         <p class="catalog-item-vendor">Перфоратор Bosh</p>
         <p class="catalog-item-modul">BFG 2000</p>
         <p class="catalog-item-discount">12500</p>
+
       </div>
     </div>
+    <div class="add-box">
+      <input type="text" placeholder="Указать товар" class="add-vendor">
+      <input type="text" placeholder="Указать марку товара" class="add-modul">
+      <input type="text" placeholder="Указать цену" class="add-price">
+      <input type="file" placeholder="Добавьте изображение" class="add-img">
+      <button type="button" class="btn-add_box">Добавить блок</button>
+    </div>
+    <button type="button" class="btn-open_add-box">&#9989;</button>
     <!--Бренды-->
     <div class="popular-block clearfix">
       <p class="popular-title">Популярные товары:</p>
@@ -285,6 +310,25 @@
       </div>
 
     </footer>
+  <div class="form-reg">
+    <form action="post" class="form-entry">
+      <h2>Вход в личный кабинет</h2>
+      <label for="nickname">Имя</label>
+      <input type="text" name="nickname" class="field-name2">
+      <span class="hint-nick2"></span>
+      <label for="password">Пароль</label>
+      <input type="password" name="password" class="field-password2">
+      <span class="hint-password2"></span>
+      <a href="#" class="forget-password">Забыли пароль?</a>
+      <button type="button" class="close-form2">Закрыть</button>
+      <button type="submit" class="form-entry__sub">Войти</button>
+    </form>
+  </div>
+
+    <script src="js/formEntry.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/addBox.js"></script>
 </body>
 </html>

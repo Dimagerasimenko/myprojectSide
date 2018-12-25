@@ -29,6 +29,8 @@ gulp.watch('style/**/*.less', gulp.series('css'));
 
 gulp.watch('**/*.html').on('change', server.reload);
 
+gulp.watch('**/*.js').on('change', server.reload);
+
 
 });
 
