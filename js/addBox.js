@@ -8,6 +8,14 @@ btnOpenAddBox.addEventListener('click', (evt) => {
   }
 })
 
+const photos = ['img/drel1.png', 'img/drel2.png', 'img/drel3.png', 'img/drel4.png'];
+
+
+
+const randomPhoto = function (min, max){
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 
 const btnAddBox = document.querySelector('.btn-add_box');
 const populaItem = document.querySelector('.popular-item');
@@ -18,7 +26,7 @@ btnAddBox.addEventListener('click', (evt) => {
   const addVendor = document.querySelector('.add-vendor').value;
   const addModul = document.querySelector('.add-modul').value;
   const addPrice = document.querySelector('.add-price').value;
-  const addImg = document.querySelector('.add-img').src;
+  const addImg = randomPhoto(0, photos.length-1);
 
 
   const divItem = document.createElement('div');
@@ -30,7 +38,7 @@ btnAddBox.addEventListener('click', (evt) => {
   btnBuyAdd.classList.add('btn-item-buy');
 
   const img = document.createElement('img');
-  img.src = addImg;
+  img.src = photos[addImg];
   img.classList.add('catolog-item-img');
   img.style.width = '127';
   img.style.height = '117';
